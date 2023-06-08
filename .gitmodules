@@ -1,0 +1,3 @@
+[submodule "astrocommunity"]
+  path = "astrocommunity"
+  url ="https://github.com/AstroNvim/astrocommunity.git"

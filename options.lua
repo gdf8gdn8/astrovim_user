@@ -17,8 +17,29 @@ return {
     icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
   },
+-- cmp themeing
+ui={  cmp = {
+    icons = true,
+    lspkind_text = true,
+    style = "default", -- default/flat_light/flat_dark/atom/atom_colored
+    border_color = "grey_fg", -- only applicable for "default" style, use color names from base30 variables
+    selected_item_bg = "colored", -- colored / simple
+  },
+
+  telescope = { style = "borderless" }, -- borderless / bordered
+
+  ------------------------------- nvchad_ui modules -----------------------------
+  statusline = {
+    theme = "default", -- default/vscode/vscode_colored/minimal
+    -- default/round/block/arrow separators work only for default statusline theme
+    -- round and block will work for minimal theme only
+    separator_style = "default",
+    overriden_modules = nil,
+  },
+  },
 }
--- If you need more control, you can use the function()...end notation
+-- If you n
+  -- eed more control, you can use the function()...end notation
 -- return function(local_vim)
 --   local_vim.opt.relativenumber = true
 --   local_vim.g.mapleader = " "

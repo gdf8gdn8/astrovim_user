@@ -13,5 +13,18 @@ return {
       {silent = true, noremap = true}
       )
     end
-  }
+  },
+ {
+  "folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {
+
+    },
+  config = function()
+      require('tokyonight').setup({
+        disable_background = true
+      })
+    end,
+  },
 }
