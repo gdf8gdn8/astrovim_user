@@ -54,7 +54,7 @@ return {
     -- RustViewCrateGraph [backend [output]]
     --  require'rust-tools'.crate_graph.view_crate_graph(backend, output)
   },
-  { import = "astrocommunity.colorscheme.nightfox", enabled = false },
+  { import = "astrocommunity.colorscheme.nightfox",  enabled = false },
   { import = "astrocommunity.colorscheme.rose-pine" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   {
@@ -86,22 +86,22 @@ return {
       },
     },
   },
-  { import = "astrocommunity.completion.copilot-lua" },
+  { import = "astrocommunity.completion.codeium-vim" },
   {
-    -- further customize the options set by the community
-    "copilot.lua",
+    --   -- further customize the options set by the community
+    "codeium.vim",
     opts = {
       enabled = false,
-      suggestion = {
-        keymap = {
-          accept = "<C-l>",
-          accept_word = false,
-          accept_line = false,
-          next = "<C-.>",
-          prev = "<C-,>",
-          dismiss = "<C/>",
-        },
-      },
+      -- suggestion = {
+      --     --   keymap = {
+      --     accept = "<C-l>",
+      --     accept_word = false,
+      --     accept_line = false,
+      --     next = "<C-.>",
+      --     prev = "<C-,>",
+      --     dismiss = "<C/>",
+      --   },
+      -- },
     },
   },
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
