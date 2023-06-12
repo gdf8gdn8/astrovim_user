@@ -33,7 +33,7 @@ return {
         "cmakelint",
         "cmakelang",
         --   "cspell",
-        "codespell",
+        --   "codespell",
         "cpplint",
         "ruff",
         "clang-format",
