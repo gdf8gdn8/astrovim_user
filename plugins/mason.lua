@@ -32,8 +32,6 @@ return {
         "stylua",
         "cmakelint",
         "cmakelang",
-        --   "cspell",
-        "codespell",
         "cpplint",
         "ruff",
         "clang-format",
