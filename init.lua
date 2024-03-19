@@ -337,15 +337,16 @@ return {
   -- Set colorscheme to use
   -- colorscheme = "rose-pine",
   -- colorscheme = "rose-pine",
-  colorscheme = "tokyonight-night",
-  {
-    "rose-pine/neovim",
-    config = function()
-      require("rose-pine").setup {
-        disable_background = true,
-      }
-    end,
-  },
+  { "AstroNvim/astrotheme", commit = "7a52efdd9a5bd302445d284a424467f92e4b1d44" },
+  -- colorscheme = "tokyonight-night",
+  -- {
+  --   "rose-pine/neovim",
+  --   config = function()
+  --     require("rose-pine").setup {
+  --       disable_background = true,
+  --     }
+  --   end,
+  -- },
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
